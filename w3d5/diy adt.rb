@@ -3,20 +3,21 @@
 # Let's write a Stack class. To do this, use the following framework:
 
   class Stack
+    attr_reader :array
     def initialize
-      # create ivar to store stack here!
+      @array = []
     end
 
     def push(el)
-      # adds an element to the stack
+      array << el
     end
 
     def pop
-      # removes one element from the stack
+      array.pop
     end
 
     def peek
-      # returns, but doesn't remove, the top element in the stack
+      array.last
     end
   end
 # To test that your code works, create a new instance of the Stack class, and play around with adding and removing elements. Remember, a stack follows the principle of LIFO!
