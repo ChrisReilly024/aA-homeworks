@@ -44,7 +44,6 @@ class Queue
     end
 end
 
-
 # Test your code to ensure it follows the principle of FIFO.
 
 # Exercise 3 - Map
@@ -70,6 +69,5 @@ class Map
         array.each {|pairs| array.delete(pairs) if pairs[0] == k}
     end
 end
-
 
 # As always, test your code thoroughly to make sure all properties of maps are enforced.
