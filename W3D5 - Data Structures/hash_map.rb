@@ -13,7 +13,7 @@ class Map
     end
 
     def get(k)
-        exist?(k).is_a?(Integer) ?  "#{@map[exist?(k)][0]} => #{@map[exist?(k)][1]}" : "Key not found"
+        exist?(k).is_a?(Integer) ?  "Key: #{@map[exist?(k)][0]}, Value: #{@map[exist?(k)][1]}" : "Key not found"
     end
     
     def delete(k)
@@ -21,7 +21,7 @@ class Map
     end
 
     def show
-        @map
+        @map.each {|set| puts "Key: #{set[0]}, Value: #{set[1]}"}
     end
     
 end
