@@ -10,7 +10,13 @@ class Simon
   end
 
   def play
-
+    take_turn 
+    if @game_over == false
+      play
+    else
+      game_over_message
+      reset_game
+    end
   end
 
   def take_turn
