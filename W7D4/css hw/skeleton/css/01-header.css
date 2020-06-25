@@ -1,0 +1,39 @@
+/* PHASE 1: Header */
+
+body {
+  color: white;
+  font-size: 16px;
+}
+
+header {
+  background: red;
+  height: 35px;
+}
+
+.header-nav {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  margin-left: 20px;
+  padding: 10px;
+  border-left: 0.2pt solid white;
+  border-right: 0.2pt solid white;
+}
+
+.nav-links {
+  display: flex;
+  margin-right: 40px;
+}
+
+
+.nav-links a {
+  display: flex;
+  margin: auto;
+  border-left: 0.2pt solid white;
+  border-right: 0.2pt solid white;
+  padding: 10px;
+}
+
